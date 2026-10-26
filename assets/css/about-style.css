@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111111d3;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    border: 1px solid black;
+    gap:1em;
+    height: 150vh;
+    width: 100%;
+}
+header{
+    position: fixed;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    
+    
+
+}
+header h2{
+    color: rgba(0, 0, 255, 0.723);
+
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    list-style: none;
+}
+
+
+.nav-items a{
+    padding: 20px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-items i{
+    color: blue;
+}
+.nav-items a:hover{
+    border-color: black;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+    color: black;
+    
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+    
+}
+line{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 7px;
+    
+}
+.take-action{
+    width: 50px;
+    text-decoration: none;
+    background-color: black;
+    color: blue;
+    padding: 8px 10px;
+    border: 1px solid blue;
+
+}
+.take-action:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+.about>div:nth-child(2){
+    grid-row: 2/4;
+    grid-column: 1/3;
+    word-spacing: 20px;
+    
+}
+.about>div:nth-child(2) span{
+    color: blue;
+    opacity: 0.7;
+}
+.about>div:nth-child(3){
+    grid-row: 2/4;
+    grid-column: 3/5;
+     background:linear-gradient(
+        rgba(0, 0, 0, 0.6),
+       rgba(0, 0, 0, 0.556)),url(../image/image/profile-img-5.webp);
+    background-size: cover;
+
+}
+.about>div:nth-child(4){
+    display: flex;
+    grid-row: 4/5;
+    grid-column: 1/5;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    align-self: self-end;
+}
+
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+     height: 150vh;
+    width: 100%;
+    background-color: rgba(123,204,260,0.2);
+
+
+}
+.contact>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    
+    
+}
+.contact-3{
+    display: flex;
+    flex-direction: column;
+    grid-row: 2/4;
+    grid-column: 2/3;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../image/image/profile-imge-3.webp);
+    background-size: cover;
+    color: beige;
+     font-size: x-large;
+}
+form{
+
+    
+    
+    display: grid;
+    /* margin-top: 6opx; */
+    font-size: x-large;
+    margin-left: 40px;
+    background: linear-gradient(rgba(123,204,260,0.2));
+    height: 500px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 30px; 
+    text-transform: capitalize;   
+
+}
+input{
+    height: 40px;
+    width: 250px;
+    background-color: beige;
+    border-radius: 5px;
+}
+button{
+    height: 80px;
+    background-color: beige;
+    text-transform: capitalize;
+    border-radius: 12px;
+    width: 90%;
+    font-size: larger;
+}
+
+.contact-4{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    background-color: black;
+    color: white;
+    justify-items: center;
+    height: 80px;
+    align-items: center;
+    align-self: self-end;
+
+
+}
+
+  
